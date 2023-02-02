@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "list-fmt"
+version = "0.0.1"
+description = "Format Iterables"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+keywords = [
+    "Formatting",
+    "Human",
+    "Iterable",
+    "List",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Typing :: Typed",
+]
+dependencies = [
+    "b26",
+    "roman",
+]
+
+[project.urls]
+Repository = "https://github.com/phoenixr-codes/list-fmt/"
+Documentation = "https://phoenixr-codes.github.io/list-fmt/"
+
+[project.optional-dependencies]
+docs = [
+    "furo",
+    "matplotlib",
+    "Sphinx",
+    "sphinx-copybutton",
+    "sphinxcontrib-repl",
+    "sphinxcontrib-trio"
+]
+
+[tool.mypy]
+ignore_missing_imports = true
+
